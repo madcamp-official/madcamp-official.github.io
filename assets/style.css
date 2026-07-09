@@ -71,9 +71,9 @@ body {
   padding: 0 24px 96px;
 }
 
-.banner-wrap {
+.hero-card {
   background: #ffffff;
-  padding: 28px 0;
+  padding: 28px 0 36px;
 }
 
 .banner {
@@ -99,6 +99,23 @@ header.hero p.tagline {
   color: var(--text-muted);
   margin: 0 0 20px;
   font-size: 1.05rem;
+}
+
+/* .hero-card is a fixed white surface (matches the banner image's
+   white background) so its text/links stay dark-on-white in both
+   themes instead of following the page's dark-mode variables. */
+.hero-card header.hero h1,
+.hero-card header.hero p.tagline {
+  color: #14181f;
+}
+.hero-card header.hero p.tagline {
+  color: #5b6472;
+}
+.hero-card .badge {
+  background: #004191;
+}
+.hero-card .nav-links a {
+  color: #0b57c9;
 }
 
 .badges {
