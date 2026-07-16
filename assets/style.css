@@ -216,6 +216,7 @@ th {
 
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: var(--bg-elevated); }
+tr:target td { background: var(--pick-bg); }
 td:first-child { white-space: nowrap; }
 td:nth-child(2) { white-space: nowrap; word-break: keep-all; }
 td:nth-child(3), td:nth-child(4) { white-space: nowrap; }
