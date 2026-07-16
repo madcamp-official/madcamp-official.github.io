@@ -215,6 +215,7 @@ th {
 
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: var(--bg-elevated); }
+td:first-child { white-space: nowrap; }
 
 table.picks td:nth-child(3) a {
   font-weight: 600;
