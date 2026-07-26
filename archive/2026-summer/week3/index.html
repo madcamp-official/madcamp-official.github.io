@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>2026 Summer · Week 3 — MadCamp Archive</title>
-<meta name="description" content="MadCamp 2026 여름학기 3주차 과제 주제: Build Deep or Spread Wide" />
+<meta name="description" content="MadCamp 2026 여름학기 3주차 프로젝트 아카이브: 15개 팀 레포, 참여자, 소개 — Build Deep or Spread Wide" />
 <link rel="icon" type="image/png" href="../../../assets/favicon.png" />
 <link rel="stylesheet" href="../../../assets/style.css" />
 </head>
@@ -19,29 +19,96 @@
 </header>
 
 <div class="meta-row">
-  <span><strong>개발 기간</strong> 2026.07.16 ~</span>
-  <span><strong>상태</strong> 진행중</span>
+  <span><strong>개발 기간</strong> 2026.07.16 ~ 2026.07.23</span>
+  <span><strong>참여 팀</strong> 15개 팀</span>
 </div>
 
-<p class="muted">3주차는 아직 진행중이라 팀별 프로젝트 목록은 완료 후 업데이트됩니다. 아래는 이번 주 과제 주제입니다.</p>
+<p>3주차는 구현 자체가 빨라진 Software 3.0 환경에서 "얼마나 깊이 있는 시스템을 만들 수 있는가"(옵션 1. Build the Core)와 "누가 이 산출물을 실제로 사용하게 할 것인가"(옵션 2. Launch &amp; Spread) 중 한 방향을 선택해 일주일 동안 집중적으로 실험하는 과제였습니다. 대부분의 팀이 UI보다 핵심 문제 해결에 집중하는 Build the Core를 택했고, 일부 팀은 실제 배포와 사용자 반응 확보까지 완료했습니다. 아래 표에서 프로젝트별 repository와 소개를 확인할 수 있습니다.</p>
 
-<h2>과제 배경</h2>
-<p>구현 자체가 빨라진 Software 3.0 환경에서는 두 가지 질문이 중요해집니다. 얼마나 깊이 있는 시스템을 만들 수 있는가, 그리고 누가 이 산출물을 실제로 사용하게 할 것인가입니다. 3주차에는 이 두 방향 중 하나를 선택해 일주일 동안 집중적으로 실험합니다. 기능을 빠짐없이 갖춘 서비스를 완성하는 것보다, 하나의 핵심 문제를 끝까지 밀어붙여 보는 실험에 가깝습니다.</p>
+<h2>금주의 픽</h2>
+<div class="table-scroll">
+<table class="picks">
+<thead><tr><th>분반</th><th>프로젝트</th><th>사이트</th></tr></thead>
+<tbody>
+<tr><td>1분반</td><td><a href="#c1-03">SPK · 환생 시뮬레이터</a></td><td><a href="https://life-reroll.com/">life-reroll.com</a></td></tr>
+<tr><td>1분반</td><td><a href="#c1-04">Vibe Cutter</a></td><td class="muted"><a href="https://github.com/madcamp-official/VibeCutter">repo</a> (로컬 MCP 도구)</td></tr>
+<tr><td>2분반</td><td><a href="#c2-03">LIBRA</a></td><td class="muted"><a href="https://github.com/madcamp-official/26s-w3-c2-01">repo</a> (CLI 도구)</td></tr>
+<tr><td>2분반</td><td><a href="#c2-02">OMYS</a></td><td class="muted"><a href="https://github.com/madcamp-official/Yarrr">repo</a> (모바일 웹)</td></tr>
+<tr><td>3분반</td><td><a href="#c3-04">PRECOG</a></td><td class="muted"><a href="https://github.com/madcamp-official/26s-w3-c3-04">repo</a> (1인칭 액션 게임)</td></tr>
+<tr><td>3분반</td><td><a href="#c3-05">JARVIS</a></td><td class="muted"><a href="https://github.com/madcamp-official/26s-w3-c3-05">repo</a> (제스처 제어)</td></tr>
+</tbody>
+</table>
+</div>
 
-<h2>옵션 1 — Build the Core</h2>
-<p><strong>가장 어려운 핵심 문제를 깊이 해결하기.</strong> UI에 들이는 시간을 최소로 줄이고, 팀 전체가 백엔드·모델·알고리즘·프로토콜·실시간 처리 등 가장 어려운 기술 문제에 집중합니다. 산출물의 사용자가 사람이 아니라 다른 프로그램이나 agent여도 됩니다(API, CLI, SDK, MCP 등). 예시로 리누스 토르발스의 초기 Git(UI 없이 견고한 해시 기반 코어 구조)과, 실시간 음성 워터마킹·검출 시스템이었던 이전 기수 프로젝트 CallCops가 제시되었습니다. 결과는 처리 속도·정확도·오류율 등 핵심 문제와 직결된 지표 1~2개로 확인합니다.</p>
+<h2>전체 프로젝트 목록</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>#</th><th>프로젝트명</th><th>레포</th><th>사이트</th><th>참여자</th><th>한줄 소개</th></tr></thead>
+<tbody>
 
-<h2>옵션 2 — Launch & Spread</h2>
-<p><strong>실제로 공개하고 사용자 반응 확인하기.</strong> 공개 배포가 선택이 아닌 기본 조건이며, 실제 사용자가 산출물을 쓰게 하고 그 반응을 바탕으로 기능이나 흐름을 최소 한 번 이상 수정하는 것이 핵심입니다. 완성 후 공개할 필요는 없고 랜딩페이지·프로토타입·초기 버전을 먼저 공개해도 됩니다(예: Wordle의 결과 공유 이모지, 토스의 초기 랜딩페이지). SNS·GitHub·Hacker News·GeekNews·Discord·커뮤니티 등 목표 사용자가 있는 채널에 직접 소개하고, 노출·방문·사용·반응·확산·유지 중 의미 있는 지표 1~2개로 반응을 확인합니다.</p>
+<tr id="c1-01"><td>c1-01</td><td>핸즈프리 스마트폰 컨트롤러</td><td><a href="https://github.com/madcamp-official/26s-w3-c1-01">repo</a></td><td class="muted">미기재 (Android 앱, 테스터 배포)</td>
+<td class="people"><a href="https://github.com/terry2549">김태현</a><a class="mail" href="mailto:terry2549@gmail.com">✉</a>, <a href="https://github.com/ywlee1127">이예원</a><a class="mail" href="mailto:ywlee1127@sookmyung.ac.kr">✉</a>, <a href="https://github.com/rth934">권순호</a><a class="mail" href="mailto:rnjstnsgh0524@gmail.com">✉</a>, <a href="https://github.com/gjtjwns06-ui">허서준</a><a class="mail" href="mailto:gjtjwns06@gmail.com">✉</a></td>
+<td>얼굴 방향으로 포인터를 움직이고 음성 명령으로 터치·뒤로가기·스크롤을 실행하는 핸즈프리 스마트폰 컨트롤러 앱</td></tr>
 
-<h2>제출할 것</h2>
-<ol>
-<li>선택한 옵션</li>
-<li>1주일 동안의 진행(및 몰입) 과정과 실험 결과 — 목표, 시도한 내용, 주요 결과, 예상과 달랐던 점과 실패한 시도 포함</li>
-<li>직접 실행하거나 사용해 볼 수 있는 산출물</li>
-<li>프로젝트 설명과 실행 방법이 작성된 GitHub 저장소</li>
-<li>팀원별 참여 내용과 주요 기여</li>
-</ol>
+<tr id="c1-02"><td>c1-02</td><td>Desksurfer</td><td><a href="https://github.com/madcamp-official/HCIzone">repo</a></td><td class="muted">미기재 (로컬 앱 + 하드웨어)</td>
+<td class="people"><a href="https://github.com/yskstuff">유영석</a><a class="mail" href="mailto:yskstuff@kaist.ac.kr">✉</a>, <a href="https://github.com/seooyy">정서영</a><a class="mail" href="mailto:seooyy@pusan.ac.kr">✉</a>, <a href="https://github.com/iconflorinity">주성민</a><a class="mail" href="mailto:smju99880@gmail.com">✉</a></td>
+<td>화면 속 버추얼 펫과 책상 위 물리 로봇을 하나의 존재로 이어, 펫이 포켓볼로 들어가면 실물 로봇이 깨어나 집으로 돌아오는 데스크톱 펫 프로젝트</td></tr>
+
+<tr id="c1-03"><td>c1-03</td><td>환생 시뮬레이터 (Samsara Simulator)</td><td><a href="https://github.com/madcamp-official/spk">repo</a></td><td><a href="https://life-reroll.com/">life-reroll.com</a></td>
+<td class="people"><a href="https://github.com/grace0068">김희서</a><a class="mail" href="mailto:graceheeseo@gmail.com">✉</a>, <a href="https://github.com/seojinnlee">이서진</a><a class="mail" href="mailto:luckytruth0315@gmail.com">✉</a>, <a href="https://github.com/omok00">이유담</a><a class="mail" href="mailto:yudam3825@gmail.com">✉</a></td>
+<td>실제 지구 인구 분포 확률 그대로 다음 생을 뽑고 결과를 카드로 만들어 공유하는 환생 시뮬레이터</td></tr>
+
+<tr id="c1-04"><td>c1-04</td><td>Vibe Cutter</td><td><a href="https://github.com/madcamp-official/VibeCutter">repo</a></td><td class="muted">미기재 (로컬 설치형 MCP 서버)</td>
+<td class="people"><a href="https://github.com/yxxnxyxxn">유나연</a><a class="mail" href="mailto:y0xnxyx0n@gmail.com">✉</a>, <a href="https://github.com/ljm030206">이지민</a><a class="mail" href="mailto:leejimin326000@gmail.com">✉</a>, <a href="https://github.com/anjonghwa0">안종화</a><a class="mail" href="mailto:aanjonghwa@gmail.com">✉</a>, <a href="https://github.com/bjsbest">박준서</a><a class="mail" href="mailto:bjsbest0326@gmail.com">✉</a></td>
+<td>"내 프로젝트 검사해줘" 한 마디로 Claude가 보안 취약점을 찾고 고치고 검증까지 해주는 MCP 서버 도구</td></tr>
+
+<tr id="c2-01"><td>c2-01</td><td>Weld</td><td><a href="https://github.com/madcamp-official/legendary-super-ultra-red-dragon">repo</a></td><td class="muted">미기재 (로컬 설치형 CLI)</td>
+<td class="people"><a href="https://github.com/dannyiscard">이재준</a><a class="mail" href="mailto:danny020514@kaist.ac.kr">✉</a>, <a href="https://github.com/Kminj2296">김민재</a><a class="mail" href="mailto:mjkim229699@gmail.com">✉</a>, <a href="https://github.com/sksy930">이서영</a><a class="mail" href="mailto:sy951020@g.skku.edu">✉</a></td>
+<td>LLM과 뮤테이션 테스팅으로 병합 후보를 검증해 진짜 충돌만 사람에게 넘기는 git merge driver</td></tr>
+
+<tr id="c2-02"><td>c2-02</td><td>OMYS — 오늘의 미스터리 스팟</td><td><a href="https://github.com/madcamp-official/Yarrr">repo</a></td><td class="muted">미기재 (Docker Compose 배포)</td>
+<td class="people"><a href="https://github.com/kkw610">김경원</a><a class="mail" href="mailto:kkw61976@gmail.com">✉</a>, <a href="https://github.com/banunas">박서윤</a><a class="mail" href="mailto:seoyoon1@ewha.ac.kr">✉</a>, <a href="https://github.com/oyossss">박소요</a><a class="mail" href="mailto:parksoyo134@sookmyung.ac.kr">✉</a>, <a href="https://github.com/ssiuuuuuu">황시우</a><a class="mail" href="mailto:hwangshiwoo@gmail.com">✉</a></td>
+<td>후보나 조건을 입력하면 서버가 실제 방문 가능한 장소 하나를 골라 도착 전까지 숨겨주는 모바일 웹 미스터리 스팟 서비스</td></tr>
+
+<tr id="c2-03"><td>c2-03</td><td>libra</td><td><a href="https://github.com/madcamp-official/26s-w3-c2-01">repo</a></td><td class="muted">미기재 (로컬 설치형 CLI)</td>
+<td class="people"><a href="https://github.com/hyun020215">양우현</a><a class="mail" href="mailto:hyun020215@gmail.com">✉</a>, <a href="https://github.com/lunar-yoobin">임유빈</a><a class="mail" href="mailto:angla2002@snu.ac.kr">✉</a>, <a href="https://github.com/Jaeyun-18">최재윤</a><a class="mail" href="mailto:min070118@gmail.com">✉</a></td>
+<td>로컬 프로젝트와 SDK·빌드 캐시 사이 의존 관계를 분석해 지우면 무엇이 깨지는지 근거와 함께 알려주는 Windows·macOS CLI 도구</td></tr>
+
+<tr id="c2-04"><td>c2-04</td><td>DoToRi</td><td><a href="https://github.com/madcamp-official/dododo">repo</a></td><td class="muted">미기재 (Electron 데스크톱 앱)</td>
+<td class="people"><a href="https://github.com/KimDoDohyeon">김도현</a><a class="mail" href="mailto:dh080249@gmail.com">✉</a>, <a href="https://github.com/dotori235">박도현</a><a class="mail" href="mailto:pdohyun4307@gmail.com">✉</a>, <a href="https://github.com/doyeonid">김도연</a><a class="mail" href="mailto:kdy05140514@gmail.com">✉</a></td>
+<td>학교 사이트·이메일·LMS·파일·캘린더·화면 활동을 하나의 로컬 Context로 통합해 근거와 함께 다음 행동을 추천하는 대학생용 AI 비서</td></tr>
+
+<tr id="c2-05"><td>c2-05</td><td>Dure</td><td><a href="https://github.com/madcamp-official/legendary-super-ultra-black-dragon">repo</a></td><td class="muted">미기재 (인프라 CLI)</td>
+<td class="people"><a href="https://github.com/jungjun0708">박정준</a><a class="mail" href="mailto:jungjun0708@g.skku.edu">✉</a>, <a href="https://github.com/chek737">박채훈</a><a class="mail" href="mailto:chekonghoon@gmail.com">✉</a>, <a href="https://github.com/yeochi369">이예지</a><a class="mail" href="mailto:yeochi369@gmail.com">✉</a>, <a href="https://github.com/wongunhui0514">원건희</a><a class="mail" href="mailto:wongunhui0514@gmail.com">✉</a></td>
+<td>커뮤니티 GPU를 모아 LLM 추론 인프라로 쓸 수 있게 하는 GPU 인프라 CLI·Agent·중앙 제어면</td></tr>
+
+<tr id="c3-01"><td>c3-01</td><td>CueCast</td><td><a href="https://github.com/madcamp-official/26s-w3-c3-01">repo</a></td><td class="muted">미기재</td>
+<td class="people"><a href="https://github.com/Kihwan819">손기환</a><a class="mail" href="mailto:sonkh4535@gmail.com">✉</a>, <a href="https://github.com/miinspp">박민수</a><a class="mail" href="mailto:qkralstn8332@hanyang.ac.kr">✉</a>, <a href="https://github.com/easy0131">이지오</a><a class="mail" href="mailto:jio12061206@gmail.com">✉</a></td>
+<td>3쿠션 당구 중계 영상을 분석해 선수 전적과 현재 경기 상태를 결합, 경기 전·실시간 승률과 샷 성공률을 예측하는 서비스</td></tr>
+
+<tr id="c3-02"><td>c3-02</td><td>clickme</td><td><a href="https://github.com/madcamp-official/clickme">repo</a></td><td><a href="https://clickme.madcamp-kaist.org/">clickme.madcamp-kaist.org</a></td>
+<td class="people"><a href="https://github.com/tjwls8912">이서진</a><a class="mail" href="mailto:tjwls8912@gmail.com">✉</a>, <a href="https://github.com/7immin">김민</a><a class="mail" href="mailto:rlaals19@ewha.ac.kr">✉</a>, <a href="https://github.com/soheean1370">안소희</a><a class="mail" href="mailto:soheean1370@gmail.com">✉</a></td>
+<td>탕수육 부먹 vs 찍먹을 반복해서 누르고 실시간 결과를 공유하는 투표 서비스</td></tr>
+
+<tr id="c3-03"><td>c3-03</td><td>Ninja Adventure</td><td><a href="https://github.com/madcamp-official/notegame">repo</a></td><td class="muted">미기재</td>
+<td class="people"><a href="https://github.com/hoseong02">양호성</a><a class="mail" href="mailto:reddevil2002yhs@gmail.com">✉</a>, <a href="https://github.com/batiger00">박지호</a><a class="mail" href="mailto:batiger00@gmail.com">✉</a>, <a href="https://github.com/izayoieosd">서영빈</a><a class="mail" href="mailto:endi060111@gmail.com">✉</a></td>
+<td>관리자 키보드로 세계를 편집하며 권한을 획득해 루트 시스템에 진입하는 저인지부하 생성형 어드벤처 게임</td></tr>
+
+<tr id="c3-04"><td>c3-04</td><td>PRECOG</td><td><a href="https://github.com/madcamp-official/26s-w3-c3-04">repo</a></td><td class="muted">미기재 (Unity 게임)</td>
+<td class="people"><a href="https://github.com/rbalskim">김규민</a><a class="mail" href="mailto:gyumin3789@gmail.com">✉</a>, <a href="https://github.com/nounmoumn">임성진</a><a class="mail" href="mailto:limsj289714@gmail.com">✉</a>, <a href="https://github.com/superloser030">김재훈</a><a class="mail" href="mailto:sunboy7594@gmail.com">✉</a></td>
+<td>적·투사체·맵 상태를 복제해 안전·기회·공격 세 가지 미래를 결정론적으로 시뮬레이션하고, 플레이어가 원하는 경로를 골라 직접 실행하는 예측 기반 1인칭 액션 게임</td></tr>
+
+<tr id="c3-05"><td>c3-05</td><td>JARVIS</td><td><a href="https://github.com/madcamp-official/26s-w3-c3-05">repo</a></td><td class="muted">미기재 (로컬 실행)</td>
+<td class="people"><a href="https://github.com/westyoon">김윤서</a><a class="mail" href="mailto:yoonseo1130@gmail.com">✉</a>, <a href="https://github.com/suh1088">박수현</a><a class="mail" href="mailto:suh10883@gmail.com">✉</a>, <a href="https://github.com/milleion">조준호</a><a class="mail" href="mailto:milleion1001@gmail.com">✉</a></td>
+<td>웹캠으로 시선과 손동작을 실시간 분석해 바라보는 전자기기를 선택하고 제스처로 명령을 실행하는 멀티모달 제어 시스템</td></tr>
+
+<tr id="c3-06"><td>c3-06</td><td>PostureCore</td><td><a href="https://github.com/madcamp-official/Into-the-Deep">repo</a></td><td class="muted">미기재 (웹앱 + Electron 앱)</td>
+<td class="people"><a href="https://github.com/yujin923">정유진</a><a class="mail" href="mailto:jyj0923alice@gmail.com">✉</a>, <a href="https://github.com/jossi-jossi">조예준</a><a class="mail" href="mailto:yjc030627@kaist.ac.kr">✉</a>, <a href="https://github.com/ireyhye">김혜리</a><a class="mail" href="mailto:hrbelle@gmail.com">✉</a></td>
+<td>웹캠 landmark로 사용자별 기준 자세를 모델링해 일시적인 움직임과 지속적인 자세 이탈을 구분하는 실시간 자세 drift 탐지 엔진</td></tr>
+
+</tbody>
+</table>
+</div>
 
 <footer>
   MadCamp · 몰입캠프 Since 2010 — <a href="mailto:madcamp.kaist@gmail.com">madcamp.kaist@gmail.com</a>
